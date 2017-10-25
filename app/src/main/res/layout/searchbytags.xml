@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e44830"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_height="33dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+
+    <TextView
+        android:id="@+id/textBeforeTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="130sp"
+        android:maxWidth="300dp"
+        android:text="TextView"
+        android:onClick="onClick1"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20.5sp"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textAfterTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:textColor="#FFFFFF"
+        android:maxWidth="500dp"
+        android:onClick="onClick2"
+        android:clickable="true"
+        android:text="TextView"
+        android:layout_weight="0.10"
+        android:textSize="40sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textBeforeTranslate"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/showTags1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_weight="0.05"
+        android:textSize="20.5sp"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/textAfterTranslate"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:id="@+id/showTags2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20.5sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.05"
+        android:layout_below="@+id/showTags1"
+         />
+    <TextView
+        android:id="@+id/showTags3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20.5sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="0.05"
+        android:layout_below="@+id/showTags2"
+         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/a4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
